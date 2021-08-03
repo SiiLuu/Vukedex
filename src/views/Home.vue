@@ -1,18 +1,26 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Vukedex</h1>
+    <Suspense>
+      <template #default>
+        <PokemonsList />
+      </template>
+      <template #fallback> Loading ... </template>
+    </Suspense>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import PokemonsList from "@/components/PokemonsList.vue";
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
-}
+  name: "Home",
+  components: { PokemonsList }
+};
 </script>
+
+<style lang="scss" scoped>
+.home {
+  padding: 5% 5%;
+}
+</style>

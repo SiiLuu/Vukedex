@@ -1,0 +1,14 @@
+
+{
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": ["./src/components/*"],
+      "@/assets/*": ["./src/assets/*"],
+      "@/views/*": ["./src/views/*"],
+      "@/router/*": ["./src/router/*"]
+    }
+  }
+}
