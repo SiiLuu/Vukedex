@@ -28,7 +28,8 @@ export default {
 <style lang="scss" scoped>
 .pokemonsList {
   padding: 5% 5%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
 }
 </style>

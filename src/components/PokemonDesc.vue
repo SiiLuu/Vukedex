@@ -90,6 +90,8 @@ export default {
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
+    max-width: 500px;
+    margin: auto;
 
     img {
       width: 90%;
